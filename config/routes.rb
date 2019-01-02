@@ -2,6 +2,12 @@ require 'sidekiq/web'
 
 Rails.application.routes.draw do
   use_doorkeeper
+
+  namespace :api do
+    namespace :v1 do 
+      get '/me' => "users#me"
+    end 
+  end 
   namespace :admin do
       resources :users
       resources :announcements
