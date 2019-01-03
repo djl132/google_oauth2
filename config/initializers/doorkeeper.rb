@@ -4,7 +4,7 @@ Doorkeeper.configure do
 
   # This block will be called to check whether the resource owner is authenticated or not.
   resource_owner_authenticator do
-
+    binding.pry
     current_user || warden.authenticate!(:scope => :user)
     # Put your resource owner authentication logic here.
     # Example implementation:

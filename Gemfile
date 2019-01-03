@@ -76,13 +76,16 @@ gem 'local_time', '~> 2.0', '>= 2.0.1'
 gem 'mini_magick', '~> 4.8'
 gem 'name_of_person', '~> 1.0'
 gem 'omniauth-facebook', '~> 5.0'
-gem 'omniauth-github', '~> 1.3'
 gem 'omniauth-twitter', '~> 1.4'
 gem 'sidekiq', '~> 5.1', '>= 5.1.3'
 gem 'sitemap_generator', '~> 6.0', '>= 6.0.1'
 gem 'webpacker', '~> 3.5', '>= 3.5.3'
 gem 'whenever', require: false
 
+gem 'omniauth-oauth2', '~> 1.3.1' # Don't touch that unless you don't want Google omniauth to work!
+gem 'omniauth-google-oauth2', '~> 0.2.2'
+
 
 
 gem 'doorkeeper', '~> 4.3', '>= 4.3.2'
+gem 'pry-remote'
